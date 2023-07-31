@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MisionVisionComponent } from './componentes/mision-vision/mision-vision.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     AboutComponent,
     NavbarComponent,
     MisionVisionComponent,
-    FooterComponent
+    FooterComponent,
+    DetallesServicioComponent
   ],
   imports: [
     BrowserModule,

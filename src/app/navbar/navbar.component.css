@@ -35,5 +35,24 @@ header {
   nav a:hover {
     text-decoration: underline;
   }
+  mat-menu {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  mat-menu button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  mat-menu button:hover {
+    background-color: #e0e0e0;
+  }
   
   

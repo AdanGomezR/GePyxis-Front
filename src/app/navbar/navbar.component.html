@@ -3,10 +3,17 @@
     <nav>
       <ul>
         <li><a routerLink="/">Inicio</a></li>
-        <li><a routerLink="/servicios">Servicios</a></li>
+        <li [matMenuTriggerFor]="serviciosMenu">Servicios</li>
+        <li [matMenuTriggerFor]="serviciosMenu"><a routerLink="/servicios">Servicios</a></li>
         <li><a routerLink="/soluciones">Soluciones</a></li>
         <li><a routerLink="/proyectos">Proyectos</a></li>
         <li><a routerLink="/about">Acerca de nosotros</a></li>
       </ul>
     </nav>
   </header>
+  <mat-menu #serviciosMenu="matMenu">
+    <button mat-menu-item routerLink="/servicios/categoria1">GEP Wallet</button>
+    <button mat-menu-item routerLink="/servicios/categoria2">manage my people</button>
+    <button mat-menu-item routerLink="/servicios/categoria3">SUA-Compliance</button>
+    <button mat-menu-item routerLink="/servicios/categoria4">Oracle-EBS</button>
+  </mat-menu>

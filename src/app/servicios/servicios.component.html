@@ -1,1 +1,15 @@
-<p>servicios works!</p>
+<!-- servicios.component.html -->
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Buscar servicios...">
+    <button (click)="searchServices()">Buscar</button>
+  </div>
+  
+  <div class="card-container">
+    <div class="card" *ngFor="let servicio of filteredServicios">
+      <img [src]="servicio.imagen" alt="Imagen del servicio">
+      <h2>{{ servicio.nombre }}</h2>
+      <p>{{ servicio.descripcion }}</p>
+      <p>Precio: {{ servicio.precio }}</p>
+      <a [routerLink]="['/servicios', servicio.id]">Ver detalles</a>
+    </div>
+  </div>

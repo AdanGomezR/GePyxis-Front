@@ -5,10 +5,13 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { SolucionesComponent } from './soluciones/soluciones.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { AboutComponent } from './about/about.component';
+import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
+ // Importa el componente para los detalles del servicio
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'servicios', component: ServiciosComponent },
+  { path: 'servicios/:id', component: DetallesServicioComponent }, // Ruta para los detalles del servicio
   { path: 'soluciones', component: SolucionesComponent },
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'about', component: AboutComponent},

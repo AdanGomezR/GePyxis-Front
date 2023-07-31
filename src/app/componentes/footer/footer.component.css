@@ -1,0 +1,33 @@
+/* footer.component.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column li {
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,43 @@
+/* soluciones.component.css */
+
+/* Estilo para el contenedor que envuelve la tarjeta */
+mat-card {
+    width: 300px; /* Ancho de la tarjeta */
+    margin: 20px; /* Márgenes alrededor de la tarjeta */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 8px; /* Borde redondeado */
+  }
+  
+  /* Estilos para el título de la tarjeta */
+  mat-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilos para la imagen de la tarjeta */
+  mat-card-image {
+    max-height: 200px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Ajustar imagen a la tarjeta sin deformar */
+    border-top-left-radius: 8px; /* Redondear la esquina superior izquierda */
+    border-top-right-radius: 8px; /* Redondear la esquina superior derecha */
+  }
+  
+  /* Estilos para el contenido de la tarjeta */
+  mat-card-content {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Estilos para los botones en la parte inferior de la tarjeta */
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinear los botones a la derecha */
+  }
+  
+  /* Estilos para los botones en sí */
+  mat-card-actions button {
+    margin-left: 8px; /* Espacio entre los botones */
+    color: #007bff; /* Color del texto de los botones (puedes usar otro color) */
+  }
+  

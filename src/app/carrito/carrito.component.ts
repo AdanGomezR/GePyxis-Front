@@ -1,6 +1,12 @@
 // carrito.component.ts
 import { Component } from '@angular/core';
 
+interface Producto {
+  imagen: string;
+  nombre: string;
+  precio: number;
+}
+
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.component.html',
@@ -22,5 +28,15 @@ export class CarritoComponent {
 
   vaciarCarrito() {
     this.carrito = [];
+  }
+  productos: Producto[] = [
+    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 1', precio: 10 },
+    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 2', precio: 15 },
+    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 3', precio: 20 },
+    // Agrega más productos según necesites
+  ];
+
+  getTotal(): number {
+    return this.productos.reduce((total, producto) => total + producto.precio, 0);
   }
 }

@@ -9,6 +9,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000; /* Ajusta el valor según la superposición con otros elementos */
+    
   }
   
   nav ul {
@@ -16,6 +17,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-end; /* Alineamos los elementos a la derecha */
   }
   
   nav li {
@@ -44,7 +46,7 @@ header {
   mat-menu button {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
     padding: 5px 10px;
     border: none;
     background: none;

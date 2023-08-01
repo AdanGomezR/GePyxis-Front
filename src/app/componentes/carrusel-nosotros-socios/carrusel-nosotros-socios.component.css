@@ -1,9 +1,11 @@
 /* inicio.component.css */
 .inicio-container {
-    max-width: 800px;
+  max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+    background-image: url('https://utec.edu.pe/sites/default/files/blog/el_impacto_de_la_transformacion_digital_en_la_administracion_de_empresas.jpg');
+    background-color: rgba(255,255,255,0.3);
   }
   
   .titulo-grande {

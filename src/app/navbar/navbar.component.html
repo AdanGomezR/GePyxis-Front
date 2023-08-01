@@ -3,17 +3,33 @@
     <nav>
       <ul>
         <li><a routerLink="/">Inicio</a></li>
-        <li [matMenuTriggerFor]="serviciosMenu">Servicios</li>
-        <li [matMenuTriggerFor]="serviciosMenu"><a routerLink="/servicios">Servicios</a></li>
-        <li><a routerLink="/soluciones">Soluciones</a></li>
-        <li><a routerLink="/proyectos">Proyectos</a></li>
-        <li><a routerLink="/about">Acerca de nosotros</a></li>
+        <li class="dropdown">
+          <a routerLink="/soluciones">Soluciones</a>
+          <ul class="dropdown-content">
+            <li><a routerLink="/servicios/categoria1">GEP Wallet</a></li>
+            <li><a routerLink="/servicios/categoria2">manage my people</a></li>
+            <li><a routerLink="/servicios/categoria3">SUA-Compliance</a></li>
+            <li><a routerLink="/servicios/categoria4">Oracle-EBS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a routerLink="/servicios">Servicios</a>
+            <ul class="dropdown-content">
+              <li><a routerLink="/servicios/categoria1">Desarrollo de apps</a></li>
+              <li><a routerLink="/servicios/categoria2">Seguridad de datos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a routerLink="/proyectos">Proyectos</a>
+            <ul class="dropdown-content">
+              <li><a routerLink="/servicios/categoria1">Soluciones</a></li>
+              <li><a routerLink="/servicios/categoria2">Servicios</a></li>
+            </ul>
+          </li>
+        <li><a routerLink="/about">Nosotros</a></li>
+        <li><a routerLink="/login"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a></li>
+        <li><a routerLink="/carrito"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
     </nav>
   </header>
-  <mat-menu #serviciosMenu="matMenu">
-    <button mat-menu-item routerLink="/servicios/categoria1">GEP Wallet</button>
-    <button mat-menu-item routerLink="/servicios/categoria2">manage my people</button>
-    <button mat-menu-item routerLink="/servicios/categoria3">SUA-Compliance</button>
-    <button mat-menu-item routerLink="/servicios/categoria4">Oracle-EBS</button>
-  </mat-menu>
+

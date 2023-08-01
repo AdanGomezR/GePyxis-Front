@@ -6,6 +6,8 @@ import { SolucionesComponent } from './soluciones/soluciones.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { AboutComponent } from './about/about.component';
 import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CarritoComponent } from './carrito/carrito.component';
  // Importa el componente para los detalles del servicio
 
 const routes: Routes = [
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'soluciones', component: SolucionesComponent },
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'about', component: AboutComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'carrito', component: CarritoComponent }, 
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
 ];
 

@@ -55,4 +55,39 @@ header {
     background-color: #e0e0e0;
   }
   
+  /* styles.css */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+    padding: 8px;
+  }
+  
+  .dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Nuevo estilo para ocultar el menú desplegable cuando el cursor no está sobre el enlace */
+  .dropdown:not(:hover) .dropdown-content {
+    display: none;
+  }
   

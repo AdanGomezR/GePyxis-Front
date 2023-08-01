@@ -20,6 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MisionVisionComponent } from './componentes/mision-vision/mision-vision.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { DetallesServicioComponent } from './componentes/detalles-servicio/detal
     NavbarComponent,
     MisionVisionComponent,
     FooterComponent,
-    DetallesServicioComponent
+    DetallesServicioComponent,
+    LoginComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,

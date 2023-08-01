@@ -1,15 +1,24 @@
-<!-- carrito.component.html -->
+<!-- carrito-compras.component.html -->
 <div class="carrito-container">
-    <h2>Carrito de compras</h2>
-    <div *ngIf="carrito.length === 0">Tu carrito está vacío.</div>
-    <div *ngIf="carrito.length > 0">
-      <ul>
-        <li *ngFor="let item of carrito">
-          {{ item.nombre }} - {{ item.precio | currency }}
-          <button (click)="eliminarItem(item)">Eliminar</button>
-        </li>
-      </ul>
-      <button (click)="vaciarCarrito()">Vaciar carrito</button>
+  <h2>Carrito de Compras</h2>
+  <div *ngFor="let producto of productos" class="producto-item">
+    <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen">
+    <div class="producto-info">
+      <h3>{{ producto.nombre }}</h3>
+      <p>Precio: ${{ producto.precio }}</p>
     </div>
   </div>
-  
+
+  <div class="total-compra">
+    <h3>Total de la compra: ${{ getTotal() }}</h3>
+  </div>
+
+  <div class="formas-pago">
+    <!-- Agrega aquí las opciones de formas de pago -->
+    <!-- Ejemplo: -->
+    <p>Tarjeta de crédito</p>
+    <p>Pago en efectivo</p>
+  </div>
+
+  <button class="boton-pagar">Pagar</button>
+</div>

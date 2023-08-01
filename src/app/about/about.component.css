@@ -1,42 +1,50 @@
 /* soluciones.component.css */
 .soluciones-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
+    background-image: url('https://www.redseguridad.com/wp-content/uploads/sites/2/2020/05/tecnologia-seguridad-1.jpg');
+    
+    
   }
   
   .titulo-grande {
-    font-size: 24px;
+    font-size: 45px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
+    color: #f5efef;
   }
   
   .tarjetas-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
   }
   
   .tarjeta {
     flex-basis: calc(25% - 20px);
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    width: 400px;
+
   }
   
   .icono-tarjeta {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #007bff; /* Puedes personalizar el color del icono */
+    /* Puedes personalizar el color del icono */
   }
   /* soluciones.component.css */
 /* ... Estilos para el primer bloque omitidos ... */
 
 .bloque-imagen {
     position: relative;
-    background-image: url('https://officebanao.com/wp-content/uploads/2022/10/Modern-office-design-5-1024x576.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-color: #525252; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
-    color: #fff; /* Color del texto en el bloque con imagen */
+    color: #080808; /* Color del texto en el bloque con imagen */
     padding: 50px;
     text-align: center;
   }
@@ -51,13 +59,16 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #007bff; /* Puedes personalizar el color del icono */
+    background-color: #02264d; /* Puedes personalizar el color del icono */
+    text-align: center;
+    
+    
   }
   
   .icono-tarjeta-vision {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ff007f; /* Puedes personalizar el color del icono */
+    background-color: #02264d; /* Puedes personalizar el color del icono */
   }
   

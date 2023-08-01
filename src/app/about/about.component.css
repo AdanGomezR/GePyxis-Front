@@ -57,7 +57,7 @@
 
 .bloque-imagen {
     position: relative;
-    background-color: #868383; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-color: #c4bebece; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #080808; /* Color del texto en el bloque con imagen */

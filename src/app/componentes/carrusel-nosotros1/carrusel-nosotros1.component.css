@@ -4,11 +4,12 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-image: url('https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/62962c7d24a3037652543afd_7-10%20oportunidades%20de%20negocios%20digitales.jpeg');
-  }
+   
+    
+}
   
   .titulo-grande {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -25,7 +26,7 @@
   }
   
   .carrusel img {
-    max-width: 100%;
-    height: auto;
+    width: 40%;
+    height: 80%;
   }
   

@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 20px;
     background-image: url('https://www.redseguridad.com/wp-content/uploads/sites/2/2020/05/tecnologia-seguridad-1.jpg');
-    
+    height: 100%;
     
   }
   
@@ -14,6 +14,13 @@
     margin-bottom: 20px;
     text-align: center;
     color: #f5efef;
+  }
+  .titulo-tarjeta{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0c0c0c;
   }
   
   .tarjetas-container {
@@ -34,6 +41,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+
     /* Puedes personalizar el color del icono */
   }
   /* soluciones.component.css */
@@ -41,7 +49,7 @@
 
 .bloque-imagen {
     position: relative;
-    background-color: #525252; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-color: #7e7c7c; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #080808; /* Color del texto en el bloque con imagen */

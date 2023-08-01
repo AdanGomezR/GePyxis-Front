@@ -1,0 +1,30 @@
+/* inicio.component.css */
+.inicio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .titulo-grande {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carrusel-item {
+    flex: 0 0 100%;
+    transition: transform 1s;
+  }
+  
+  .carrusel img {
+    max-width: 100%;
+    height: auto;
+  }
+  

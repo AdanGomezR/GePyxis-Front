@@ -22,6 +22,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { CarruselNosotros1Component } from './componentes/carrusel-nosotros1/carrusel-nosotros1.component';
+import { CarruselNosotrosSociosComponent } from './componentes/carrusel-nosotros-socios/carrusel-nosotros-socios.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { CarritoComponent } from './carrito/carrito.component';
     FooterComponent,
     DetallesServicioComponent,
     LoginComponent,
-    CarritoComponent
+    CarritoComponent,
+    CarruselNosotros1Component,
+    CarruselNosotrosSociosComponent
   ],
   imports: [
     BrowserModule,

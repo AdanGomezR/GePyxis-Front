@@ -22,6 +22,12 @@
     text-align: center;
     color: #0c0c0c;
   }
+  .descripcion-tarjeta{
+    text-align: justify;
+    color: #0f0f0f;
+    font-size: 20px;
+    
+  }
   
   .tarjetas-container {
     display: flex;
@@ -34,6 +40,8 @@
     flex-basis: calc(25% - 20px);
     margin-bottom: 100px;
     width: 400px;
+    background-color: #fbfafdc5;
+
 
   }
   
@@ -49,7 +57,7 @@
 
 .bloque-imagen {
     position: relative;
-    background-color: #7e7c7c; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-color: #868383; /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #080808; /* Color del texto en el bloque con imagen */
@@ -67,7 +75,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #02264d; /* Puedes personalizar el color del icono */
+    background-image: url('https://cdn-icons-png.flaticon.com/128/3721/3721149.png');
+    background-size: 40px 40px;
+   /* background-color:  #4d2a02; /* Puedes personalizar el color del icono */
     text-align: center;
     
     
@@ -77,6 +87,16 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #02264d; /* Puedes personalizar el color del icono */
+    /*background-color: #02264d; /* Puedes personalizar el color del icono */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3442/3442687.png');
+    background-size: 40px 40px;
+  }
+  .icono-tarjeta-nuestros {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*background-color: #02264d; /* Puedes personalizar el color del icono */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1528/1528669.png');
+    background-size: 40px 40px;
   }
   

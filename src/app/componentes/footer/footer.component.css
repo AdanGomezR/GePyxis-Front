@@ -9,12 +9,13 @@
   
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   .column {
     flex: 1;
     margin: 0 10px;
+    text-align: center;
   }
   
   .column h3 {

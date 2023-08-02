@@ -4,6 +4,8 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
+/** CARRUSEL **/
+
 .carousel-container {
   display: flex;
   overflow: hidden;
@@ -71,4 +73,117 @@ body, html {
   100% {
     transform: translateX(0);
   }
+}
+
+/** Sobre Nosotros **/
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 1110px; /* Ajusta el ancho máximo deseado */
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #0516AE;
+  border-color: #0516AE;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-2 {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #0516AE;
+  border-color: #0516AE;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/** VIDEO **/
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+  background-color: #ffffff;
+
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/** CARDS **/
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mission {
+  border: 2px solid #1abc9c;
+}
+
+.vision {
+  border: 2px solid #3498db;
 }

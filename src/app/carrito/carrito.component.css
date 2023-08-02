@@ -1,37 +1,49 @@
 /* shopping-cart.component.css */
 .shopping-cart {
   display: flex;
-  border: 1px solid #ccc;
+  border: 2px solid #423e3e;
   justify-content: space-between;
 }
 
 .product-list {
-  border: 1px solid #ccc;
+  border: 2px solid #423e3e;
   flex: 1;
 }
 
 .product {
-  background-color: rgba(255, 235, 205, 0.286);
+  background-color: rgba(92, 92, 91, 0.344);
   display: flex;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  
 }
 
 .product-image img {
-  max-width: 90%;
+  max-width: 400px;
   margin-right: 10px;
 }
 
+.opcion-pago{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(255, 252, 252, 0.7);
+  border: 1px solid #423e3e;
+}
 .cart-summary {
+  background-size: cover;
+  background-image: url('https://s10.s3c.es/imag/_v0/1200x655/c/3/e/600x400_pagon-con-el-movil.jpg');
   flex: 0 0 300px;
-  border: 1px solid #ccc;
+  border: 2px solid #423e3e;
   padding: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 /* Estilo para el espacio en blanco */
 .spacer {
   margin-top: 60px; /* Ajusta el valor para obtener el espacio deseado */
 }
-
+.resumen-compra {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
 /* Estilo para el contenido del carrito de compras 
 .shopping-cart-content {
   display: flex;

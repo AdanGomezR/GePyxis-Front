@@ -25,7 +25,9 @@ export class CarritoComponent  implements OnInit {
     this.products = this.cartService.getProducts();
     this.cartTotal = this.cartService.getTotal();
   }
-
+ // Variable para almacenar la forma de pago seleccionada
+ selectedPaymentMethod: string = 'mercado-pago';
+ 
   pay(): void {
     // Aquí puedes implementar la lógica para el proceso de pago
     // Puedes mostrar un mensaje de confirmación o redireccionar a una página de pago real

@@ -21,8 +21,14 @@
   <div class="cart-summary">
     <h2>Resumen del carrito</h2>
     <mat-list>
-      <mat-list-item>Total: ${{ cartTotal.toFixed(2) }}</mat-list-item>
+      <mat-list-item class='resumen-compra'>Total: ${{ cartTotal.toFixed(2) }}</mat-list-item>
       <!-- Agrega aquí las formas de pago como mat-list-item -->
+      <h3>Forma de pago:</h3>
+      <mat-radio-group [(ngModel)]="selectedPaymentMethod">
+        <mat-radio-button class='resumen-compra' value="mercado-pago">Mercado Pago</mat-radio-button>
+        <mat-radio-button class='resumen-compra' value="tarjeta">Tarjeta de crédito o débito</mat-radio-button>
+        <mat-radio-button class='resumen-compra' value="paypal">PayPal</mat-radio-button>
+      </mat-radio-group>
     </mat-list>
     <button mat-raised-button color="primary" (click)="pay()">Pagar</button>
   </div>

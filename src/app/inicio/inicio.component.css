@@ -1,65 +1,74 @@
-/* inicio.component.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-.product-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .product-card {
-    width: calc(33.33% - 20px); /* Ajusta el tamaño de las tarjetas */
-    margin-bottom: 20px;
-  }
-  /* inicio.component.css */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 
-.slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+.carousel-slide {
+  flex: 0 0 100%;
+  position: relative;
+  animation: slide 8s infinite;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 500px; /* Aumentamos la altura de la imagen a 500px */
+  object-fit: cover;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centramos vertical y horizontalmente */
+  text-align: center;
+  color: white;
+  width: 80%; /* Ajusta el ancho del texto para que no se desborde */
+}
+
+.carousel-text h2 {
+  font-size: 50px;
+}
+
+.carousel-text p {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.carousel-text button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-text button:hover {
+  background-color: #0056b3;
+}
+
+/* Agrega animación de deslizamiento */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  
-  .carousel {
-    width: 100%;
+  33.33% {
+    transform: translateX(-100%);
   }
-  
-  .slider-content {
-    position: relative;
-    overflow: hidden;
-    height: 400px; /* Ajusta la altura del carrusel */
+  66.66% {
+    transform: translateX(-200%);
   }
-  
-  .slider-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  100% {
+    transform: translateX(0);
   }
-  
-  .carousel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  iframe {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-  }
+}

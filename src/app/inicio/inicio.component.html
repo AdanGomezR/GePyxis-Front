@@ -1,16 +1,54 @@
 <!-- CARRUSEL -->
+
+<!--
 <div class="slider-container">
     <mat-slider class="carousel" [(ngModel)]="currentSlide" [min]="0" [max]="carouselImages.length - 1" [step]="1"></mat-slider>
   
     <div class="slider-content">
       <div class="slider-item" *ngFor="let slide of carouselImages; let i = index" [hidden]="currentSlide !== i">
-        <img [src]="slide.image" alt="Imagen del carrusel" class="carousel-image" />
+        <img src="assets/img/inicio.jpg" alt="Imagen del carrusel" class="carousel-image" />
+        <div class="carousel-content">
+          <button mat-raised-button color="primary" (click)="navigateToPage(slide.page)">Ir a {{ slide.page }}</button>
+        </div>
+        <img src="assets/img/inicio.jpg" alt="Imagen del carrusel" class="carousel-image" />
         <div class="carousel-content">
           <button mat-raised-button color="primary" (click)="navigateToPage(slide.page)">Ir a {{ slide.page }}</button>
         </div>
       </div>
     </div>
   </div>
+-->
+<body>
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="assets/img/inicio.jpg" alt="Imagen 1">
+      <div class="carousel-text">
+        <h2>Ge Pyxis Mx</h2>
+        <p>Brindamos servicios de valor agregado en Tecnologías de Información. 
+          Implementamos y soportamos soluciones ERP, CRM y más para pymes y corporativos.</p>
+        <button>Ver Más Proyectos</button>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/img/inicio1.jpg" alt="Imagen 2">
+      <div class="carousel-text">
+        <h2>Ge Pyxis Mx</h2>
+        <p>Analizamos y diagnosticamos los procesos clave de los negocios ofreciendo las 
+          alternativas de solución adecuadas para cada empresa.</p>
+        <button>Ver Más Proyectos</button>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="assets/img/inicio2.jpg" alt="Imagen 2">
+      <div class="carousel-text">
+        <h2>Ge Pyxis Mx</h2>
+        <p>Fortalecer el desarrollo y crecimiento de nuestros clientes a través de proveer soluciones 
+          focalizadas en áreas claves del negocio, en los procesos, en las personas y en los clientes.</p>
+        <button>Ver Más Proyectos</button>
+      </div>
+    </div>
+  </div>
+</body>
 
 
   <!-- VIDEO -->

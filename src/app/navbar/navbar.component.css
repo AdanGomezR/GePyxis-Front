@@ -1,95 +1,119 @@
-/* header.component.css */
-
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ajusta el valor según la superposición con otros elementos */
-    
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end; /* Alineamos los elementos a la derecha */
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav li:last-child {
-    margin-right: 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  mat-menu {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  mat-menu button {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding: 5px 10px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  mat-menu button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  /* styles.css */
-.dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content {
+  margin-top: -40px;
+}
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  margin-left: 60px;
+}
+
+.logo img {
+  max-height: 45px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+  margin-right: 25px; /* Agregamos un margen derecho para separar los elementos del menú */
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.8s ease;
+}
+
+.menu a:hover {
+  color: rgb(248, 148, 55);
+  font-weight: bold;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  max-width: 200px;
+  margin-top: 5px; /* Margen para el submenú */
+}
+
+.submenu-content li {
+  width: 100%;
+}
+
+.submenu-content li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+}
+
+.submenu-content li a:hover {
+  background-color: #777;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
     display: none;
     position: absolute;
-    top: 100%;
+    top: 50px;
     left: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0;
-    z-index: 1;
+    width: 100%;
+    background-color: #333;
   }
-  
-  .dropdown:hover .dropdown-content {
+
+  .menu li {
+    margin-left: 0;
+    margin-right: 0; /* Eliminamos el margen derecho en pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  .menu a {
+    padding: 10px 20px;
+  }
+
+  .menu-icon {
     display: block;
   }
-  
-  .dropdown-content li {
-    list-style: none;
-    padding: 8px;
+
+  .menu.show {
+    display: flex;
   }
-  
-  .dropdown-content li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  /* Nuevo estilo para ocultar el menú desplegable cuando el cursor no está sobre el enlace */
-  .dropdown:not(:hover) .dropdown-content {
-    display: none;
-  }
-  
+}

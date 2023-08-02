@@ -1,35 +1,45 @@
 <!-- navbar.component.html -->
-<header>
-    <nav>
-      <ul>
-        <li><a routerLink="/">Inicio</a></li>
-        <li class="dropdown">
-          <a routerLink="/soluciones">Soluciones</a>
-          <ul class="dropdown-content">
-            <li><a routerLink="/servicios/categoria1">GEP Wallet</a></li>
-            <li><a routerLink="/servicios/categoria2">manage my people</a></li>
-            <li><a routerLink="/servicios/categoria3">SUA-Compliance</a></li>
-            <li><a routerLink="/servicios/categoria4">Oracle-EBS</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-            <a routerLink="/servicios">Servicios</a>
-            <ul class="dropdown-content">
-              <li><a routerLink="/servicios/categoria1">Desarrollo de apps</a></li>
-              <li><a routerLink="/servicios/categoria2">Seguridad de datos</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a routerLink="/proyectos">Proyectos</a>
-            <ul class="dropdown-content">
-              <li><a routerLink="/servicios/categoria1">Soluciones</a></li>
-              <li><a routerLink="/servicios/categoria2">Servicios</a></li>
-            </ul>
-          </li>
-        <li><a routerLink="/about">Nosotros</a></li>
-        <li><a routerLink="/login"><i class="fas fa-sign-in-alt"></i> </a></li>
-        <li><a routerLink="/carrito"><i class="fas fa-shopping-cart"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-
+<header>  
+  <nav>
+    <div class="logo">
+      <a href="inicio"><img src="assets/img/LogoGP.png" alt="Logo"></a>
+    </div>
+    <div class="menu-icon">&#9776;</div>
+    <ul class="menu">
+      <li><a href="inicio">Inicio</a></li>
+      <li class="submenu">
+        <a href="soluciones">Soluciones &#9662;</a>
+        <ul class="submenu-content">
+          <li><a href="soluciones/categoria1">GEP Wallet</a></li>
+          <li><a href="soluciones/categoria2">Manage My People</a></li>
+          <li><a href="soluciones/categoria3">SUA-Compliance</a></li>
+          <li><a href="soluciones/categoria4">Oracle-EBS</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="servicios">Servicios &#9662;</a>
+        <ul class="submenu-content">
+          <li><a href="servicios/categoria1">Desarrollo de apps</a></li>
+          <li><a href="servicios/categoria2">Seguridad de datos</a></li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="proyectos">Proyectos &#9662;</a>
+        <ul class="submenu-content">
+          <li><a href="proyectos/categoria2">Soluciones</a></li>
+          <li><a href="proyectos/categoria2">Servicios</a></li>
+        </ul>
+      </li>
+      <li><a href="about">Nosotros</a></li>
+      <li class="submenu">
+        <a href="login">Login</a>
+        <ul class="submenu-content">
+          <li><a href="login">Iniciar Sesión</a></li>
+          <li><a href="registro">Registrar</a></li>
+        </ul>
+      </li>
+      <li><a href="carrito"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+  </nav>
+</header>
+  

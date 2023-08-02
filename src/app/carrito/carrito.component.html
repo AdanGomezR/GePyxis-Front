@@ -1,24 +1,31 @@
-<!-- carrito-compras.component.html -->
-<div class="carrito-container">
-  <h2>Carrito de Compras</h2>
-  <div *ngFor="let producto of productos" class="producto-item">
-    <img [src]="producto.imagen" alt="{{ producto.nombre }}" class="producto-imagen">
-    <div class="producto-info">
-      <h3>{{ producto.nombre }}</h3>
-      <p>Precio: ${{ producto.precio }}</p>
+<!-- shopping-cart.component.html -->
+<div class="spacer"></div>
+<div class="shopping-cart-content">
+<div class="shopping-cart">
+  <div class="product-list">
+    <div *ngFor="let product of products" class="product">
+      <div class="product-image">
+        <img [src]="product.image" alt="Producto">
+      </div>
+      <div class="product-details">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Cantidad: {{ product.quantity }}</p>
+        <p>Precio: ${{ product.price.toFixed(2) }}</p>
+        <button mat-icon-button (click)="removeFromCart(product)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
-
-  <div class="total-compra">
-    <h3>Total de la compra: ${{ getTotal() }}</h3>
+  <div class="cart-summary">
+    <h2>Resumen del carrito</h2>
+    <mat-list>
+      <mat-list-item>Total: ${{ cartTotal.toFixed(2) }}</mat-list-item>
+      <!-- Agrega aquí las formas de pago como mat-list-item -->
+    </mat-list>
+    <button mat-raised-button color="primary" (click)="pay()">Pagar</button>
   </div>
-
-  <div class="formas-pago">
-    <!-- Agrega aquí las opciones de formas de pago -->
-    <!-- Ejemplo: -->
-    <p>Tarjeta de crédito</p>
-    <p>Pago en efectivo</p>
-  </div>
-
-  <button class="boton-pagar">Pagar</button>
 </div>
+</div>
+<div class="spacer"></div>

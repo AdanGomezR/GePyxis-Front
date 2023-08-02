@@ -1,5 +1,8 @@
 // carrito.component.ts
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../cart.service';
+import { Product } from '../product.model';
+
 
 interface Producto {
   imagen: string;
@@ -12,31 +15,26 @@ interface Producto {
   templateUrl: './carrito.component.html',
   styleUrls: ['./carrito.component.css']
 })
-export class CarritoComponent {
-  carrito: any[] = []; // Aquí se almacenarán los elementos del carrito
+export class CarritoComponent  implements OnInit {
+  products: any[] = [];
+  cartTotal: number = 0;
 
-  agregarAlCarrito(item: any) {
-    this.carrito.push(item);
+  constructor(private cartService: CartService) { }
+
+  ngOnInit(): void {
+    this.products = this.cartService.getProducts();
+    this.cartTotal = this.cartService.getTotal();
   }
 
-  eliminarItem(item: any) {
-    const index = this.carrito.indexOf(item);
+  pay(): void {
+    // Aquí puedes implementar la lógica para el proceso de pago
+    // Puedes mostrar un mensaje de confirmación o redireccionar a una página de pago real
+  }
+   // Función para eliminar un producto del carrito
+   removeFromCart(product: Product): void {
+    const index = this.products.indexOf(product);
     if (index !== -1) {
-      this.carrito.splice(index, 1);
+      this.products.splice(index, 1);
     }
-  }
-
-  vaciarCarrito() {
-    this.carrito = [];
-  }
-  productos: Producto[] = [
-    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 1', precio: 10 },
-    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 2', precio: 15 },
-    { imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4YdkaDuKbvtSJYdDke7ljWyAgy2vaP6NDg&usqp=CAU', nombre: 'Producto 3', precio: 20 },
-    // Agrega más productos según necesites
-  ];
-
-  getTotal(): number {
-    return this.productos.reduce((total, producto) => total + producto.precio, 0);
   }
 }

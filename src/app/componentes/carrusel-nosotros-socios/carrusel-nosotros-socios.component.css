@@ -4,12 +4,14 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-image: url('https://utec.edu.pe/sites/default/files/blog/el_impacto_de_la_transformacion_digital_en_la_administracion_de_empresas.jpg');
-    background-color: rgba(255,255,255,0.3);
+    background-size: cover;
+    background-image: url("https://www.ntxpro.net/wp-content/uploads/2018/10/conf-1080x675.jpg");
+    
+   
   }
   
   .titulo-grande {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -26,7 +28,7 @@
   }
   
   .carrusel img {
-    max-width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
   }
   

@@ -63,3 +63,27 @@
 .btn-orange:hover {
     transform: scale(1.1); /* Aumenta el tamaño del botón un 10% cuando el cursor está sobre él. */
 }
+.column2 {
+    text-align: left;
+    flex-basis: 50%; /* Indica que cada columna debe comenzar con el 50% del ancho total */
+    padding: 15px;
+    box-sizing: border-box; /* Asegúrate de que padding y otros estilos de caja no aumenten el tamaño de las columnas */
+  }
+  .spacer {
+    margin-bottom: 3rem;
+  }
+  /** VIDEO **/
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    
+  
+  }
+  
+  iframe {
+    width: 90%;
+    height: 90%;
+  }

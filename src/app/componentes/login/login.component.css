@@ -1,34 +1,150 @@
-/* login.component.css */
 .login-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  background-color: rgba(246, 247, 249, 0.516);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  .left-column {
+    /* Estilos de la columna izquierda, sin cambios */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center; /* Centrar el contenido verticalmente */
+    text-align: center;
+    img {
+      width: 200px;
+      height: auto;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
   }
-  
-  .form-group {
-    margin-bottom: 15px;
+
+  .right-column {
+    background-color: #6c5a5a2c;
+    /*margin-left: 200px; 
+    /* Estilos de la columna derecha, con cambios */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar el contenido verticalmente */
+    align-items: center;
+    padding: 1rem;
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      
+      width: 100%;
+      max-width: 300px;
+
+      mat-form-field {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+}
+.custom-button {
+  width: 100%;
+  height: 30px;
+  /* Estilos básicos del botón */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  /* Estilos adicionales para darle el aspecto de un botón */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* Estilos de interacción cuando se coloca el cursor sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+.custom-button1 {
+  width: 100%;
+  height: 30px;
+  /* Estilos básicos del botón */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ec280e9c;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  /* Estilos adicionales para darle el aspecto de un botón */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* Estilos de interacción cuando se coloca el cursor sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.custom-button1:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+.custom-button2 {
+  width: 100%;
+  height: 30px;
+  /* Estilos básicos del botón */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #16891cac;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  /* Estilos adicionales para darle el aspecto de un botón */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* Estilos de interacción cuando se coloca el cursor sobre el botón */
+  transition: background-color 0.3s ease;
+}
+
+.custom-button2:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+.form-container {
+  /* Ajusta el valor del margen izquierdo según la cantidad de espacio que desees */
+  margin-right: 400px;
+  max-width: 300px; /* Ajusta el ancho del formulario según tus necesidades */
+}
+.spacer {
+  margin-bottom: 1rem;
+}
+.imagen-izquierda{
+  width: 400px;
+}

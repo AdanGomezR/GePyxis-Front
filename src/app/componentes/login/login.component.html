@@ -1,14 +1,49 @@
+<div class="spacer"></div>
 <div class="login-container">
-    <h2>Iniciar sesión</h2>
-    <form (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="username">Usuario</label>
-        <input type="text" id="username" name="username" [(ngModel)]="username" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" name="password" [(ngModel)]="password" required>
-      </div>
-      <button type="submit">Iniciar sesión</button>
-    </form>
+  <!-- Columna izquierda con el logotipo y el texto breve -->
+  <div class="left-column">
+    <img class="imagen-izquierda" src="assets/img/LogoGP.png" alt="Logo de la empresa">
+    <p>Brindamos servicios de valor agregado en tecnologías de información, implementamos y soportamos soluciones ERP, CRM, entre otros.</p>
   </div>
+
+  <!-- Columna derecha con el formulario de inicio de sesión -->
+  <div class="container">
+    <div class="form-container">
+    <mat-card class="login-card">  
+      <div class="right-column">
+        
+        <h2>Iniciar sesión</h2>
+        <form>
+          <mat-card-content>
+            <mat-form-field appearance="fill">
+              <a>Email o teléfono</a>
+              <input matInput type="text" [(ngModel)]="email" placeholder="email@email.com">
+            </mat-form-field>
+          </mat-card-content>
+
+          <!-- Agregar un espacio para separar los campos -->
+        
+
+          <mat-card-content>
+            <mat-form-field appearance="fill">
+              <a>Contraseña</a>
+              <input matInput type="password" [(ngModel)]="password" placeholder="************">
+            </mat-form-field>
+          </mat-card-content>
+          <div class="actions">
+          <button class="custom-button" >Iniciar sesión</button>
+        </div>
+        </form>
+        <div class="spacer"></div>
+        <div class="actions">
+          <button class="custom-button1">Recuperar contraseña</button>
+          <div class="spacer"></div>
+          <button class="custom-button2">Registrarse</button>
+        </div>
+      </div>
+    
+    </mat-card>
+  </div>
+  </div>
+</div>
+<div class="spacer"></div>

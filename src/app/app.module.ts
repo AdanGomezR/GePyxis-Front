@@ -9,6 +9,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -59,7 +60,8 @@ import { CarruselNosotrosSociosComponent } from './componentes/carrusel-nosotros
     MatSliderModule,
     FormsModule,
     MatListModule,
-    MatRadioModule
+    MatRadioModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

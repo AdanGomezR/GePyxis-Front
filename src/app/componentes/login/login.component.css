@@ -88,7 +88,7 @@
   background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 .custom-button1 {
-  width: 100%;
+  width: 100;
   height: 30px;
   /* Estilos básicos del botón */
   display: inline-block;

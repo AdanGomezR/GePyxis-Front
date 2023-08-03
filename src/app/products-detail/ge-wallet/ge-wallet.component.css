@@ -1,0 +1,65 @@
+.gif-block {
+    background: url('https://metododinero.com/wp-content/uploads/2020/03/ImpishQueasyBoubou-size_restricted.gif') no-repeat center center fixed; 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+  }
+  
+  .gif-block h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .gif-block p {
+    text-align: center;
+  }
+  .content-block {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .column {
+    flex-basis: 50%; /* Indica que cada columna debe comenzar con el 50% del ancho total */
+    padding: 15px;
+    box-sizing: border-box; /* Asegúrate de que padding y otros estilos de caja no aumenten el tamaño de las columnas */
+  }
+  
+  .column img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la columna */
+  }
+  
+  .column p {
+    text-align: justify;
+  }
+  .titulo-grande {
+    font-size: 3.5em;
+  }
+  .texto-largo{
+    font-size: 1.3em;
+  }
+  .bg-blue {
+    background-color: rgb(62, 62, 255); /* Puedes reemplazar 'blue' por el código de color que prefieras. */
+    color: white;
+    font-size: 2em;
+}
+
+.btn-orange {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: none;
+    margin-top: 30%; /* Añade un margen en la parte superior para mover el botón hacia abajo. */
+    transition: transform 0.3s; /* Añade una transición para suavizar el cambio de tamaño. */
+    font-size: 1.1em;
+}
+
+.btn-orange:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón un 10% cuando el cursor está sobre él. */
+}

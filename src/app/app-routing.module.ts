@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { DetallesServicioComponent } from './componentes/detalles-servicio/detalles-servicio.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { GeWalletComponent } from './products-detail/ge-wallet/ge-wallet.component';
  // Importa el componente para los detalles del servicio
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'servicios', component: ServiciosComponent },
   { path: 'servicios/:id', component: DetallesServicioComponent }, // Ruta para los detalles del servicio
   { path: 'soluciones', component: SolucionesComponent },
+  { path: 'soluciones/GEP-Wallet', component: GeWalletComponent },
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'about', component: AboutComponent},
   { path: 'login', component: LoginComponent },

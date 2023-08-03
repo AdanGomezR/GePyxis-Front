@@ -27,6 +27,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { CarruselNosotros1Component } from './componentes/carrusel-nosotros1/carrusel-nosotros1.component';
 import { CarruselNosotrosSociosComponent } from './componentes/carrusel-nosotros-socios/carrusel-nosotros-socios.component';
+import { GeWalletComponent } from './products-detail/ge-wallet/ge-wallet.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { CarruselNosotrosSociosComponent } from './componentes/carrusel-nosotros
     LoginComponent,
     CarritoComponent,
     CarruselNosotros1Component,
-    CarruselNosotrosSociosComponent
+    CarruselNosotrosSociosComponent,
+    GeWalletComponent
   ],
   imports: [
     BrowserModule,

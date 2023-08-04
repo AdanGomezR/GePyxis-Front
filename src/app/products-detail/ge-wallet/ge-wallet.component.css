@@ -87,3 +87,55 @@
     width: 90%;
     height: 90%;
   }
+ .img-down{
+    height: 100%;
+ }
+ .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/10425914/image/bade7c17a8457daa0687062c9c648573') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+}
+
+.block h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-orange2 {
+    background-color: rgb(255, 119, 0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.button-orange2:hover {
+    transform: scale(1.1);
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: rgb(255, 119, 0);
+    font-size: 20px;
+}

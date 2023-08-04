@@ -28,6 +28,9 @@ import { CarritoComponent } from './carrito/carrito.component';
 import { CarruselNosotros1Component } from './componentes/carrusel-nosotros1/carrusel-nosotros1.component';
 import { CarruselNosotrosSociosComponent } from './componentes/carrusel-nosotros-socios/carrusel-nosotros-socios.component';
 import { GeWalletComponent } from './products-detail/ge-wallet/ge-wallet.component';
+import { ManagePeopleComponent } from './products-detail/manage-people/manage-people.component';
+import { SuaComplianceComponent } from './products-detail/sua-compliance/sua-compliance.component';
+import { OracleEbsComponent } from './products-detail/oracle-ebs/oracle-ebs.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { GeWalletComponent } from './products-detail/ge-wallet/ge-wallet.compone
     CarritoComponent,
     CarruselNosotros1Component,
     CarruselNosotrosSociosComponent,
-    GeWalletComponent
+    GeWalletComponent,
+    ManagePeopleComponent,
+    SuaComplianceComponent,
+    OracleEbsComponent
   ],
   imports: [
     BrowserModule,

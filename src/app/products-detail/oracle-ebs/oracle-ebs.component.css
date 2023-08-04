@@ -1,12 +1,12 @@
 .gif-block {
-    background: url('https://metododinero.com/wp-content/uploads/2020/03/ImpishQueasyBoubou-size_restricted.gif') no-repeat center center fixed; 
+    background: url('https://amnoticias.com.mx/images/facuele.gif') no-repeat center center fixed; 
     background-size: cover;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ffffff;
+    color: #111111;
   }
   
   .gif-block h1 {

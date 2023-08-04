@@ -12,9 +12,13 @@
   .gif-block h1 {
     margin-bottom: 20px;
     text-align: center;
+    font-size: 50px;
   }
   .gif-block p {
     text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
   }
   .content-block {
     text-align: center;
@@ -33,7 +37,8 @@
   }
   
   .column img {
-    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la columna */
+    max-width: 95%; /* Asegura que la imagen no sobrepase el ancho de la columna */
+    margin-left: 35px;
   }
   
   .column p {
@@ -44,6 +49,7 @@
   }
   .texto-largo{
     font-size: 1.3em;
+    margin-right: 30px;
   }
   .bg-blue {
     background-color: rgb(62, 62, 255); /* Puedes reemplazar 'blue' por el código de color que prefieras. */
@@ -55,9 +61,10 @@
     background-color: rgb(255, 94, 0);
     color: white;
     border: none;
+    border-radius: 5px;
     margin-top: 30%; /* Añade un margen en la parte superior para mover el botón hacia abajo. */
     transition: transform 0.3s; /* Añade una transición para suavizar el cambio de tamaño. */
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .btn-orange:hover {
@@ -67,6 +74,7 @@
     text-align: left;
     flex-basis: 50%; /* Indica que cada columna debe comenzar con el 50% del ancho total */
     padding: 15px;
+    margin-top: -25px;
     box-sizing: border-box; /* Asegúrate de que padding y otros estilos de caja no aumenten el tamaño de las columnas */
   }
   .spacer {
@@ -84,8 +92,8 @@
   }
   
   iframe {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
   }
  .img-down{
     height: 100%;
@@ -137,7 +145,11 @@
 
 .social-icons a {
     color: rgb(255, 119, 0);
-    font-size: 20px;
+    font-size: 25px;
+}
+.social-icons a:hover {
+  color: red;
+  font-size: 25px;
 }
 p {
     font-weight: bold;

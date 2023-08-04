@@ -45,7 +45,7 @@ body {
 }
 
 .image-section img {
-  width: 50%;
+  width: 45%;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -91,10 +91,13 @@ body {
   width: 200px;
   /* Estilos adicionales para el efecto "hover" */
   transition: background-color 0.5s ease-in-out; /* Animación suave */
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .form-section input[type="submit"]:hover {
   background-color: #0056b3; /* Color de fondo diferente al hacer "hover" */
+  font-weight: bold;
 }
 
 .spacer {

@@ -112,8 +112,8 @@ button {
   margin: 0 5px;
   font-size: 16px;
   border-radius: 5px;
-  background-color: #0516AE;
-  border-color: #0516AE;
+  background-color: #007BFF;
+  border-color: #007BFF;
   color: #fff;
   cursor: pointer;
 }
@@ -124,13 +124,14 @@ button {
   font-size: 16px;
   border-radius: 5px;
   background-color: #fff;
-  color: #0516AE;
-  border-color: #0516AE;
+  color: #007BFF;
+  border-color: #007BFF;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #0056b3;
+  color: #fff;
 }
 
 /** VIDEO **/

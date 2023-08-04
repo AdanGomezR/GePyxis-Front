@@ -80,13 +80,11 @@ body, html {
 body {
   justify-content: center;
   align-items: center;
-  background-color: #fc0404;
 }
 
 .container {
   text-align: center;
   background-color: #ffffff;
-  border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -147,8 +145,8 @@ button:hover {
 }
 
 iframe {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 
 /** CARDS **/

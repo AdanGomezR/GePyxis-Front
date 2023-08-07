@@ -1,3 +1,29 @@
 <!-- detalles-servicio.component.html -->
-<h2>Detalles del servicio {{ servicioId }}</h2>
+<body>
+    <div class="spacer"></div>
+    <h2  style="text-align: center;">Detalles del servicio {{ servicioId }}</h2>
 <!-- Mostrar más detalles del servicio aquí -->
+    <div class="product-detail">
+        <div class="product-image">
+            <!-- Coloca aquí la URL de la imagen del producto -->
+            <img src="assets/img/GEP_Wallet.webp" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2 class="product-name">Gep Wallet</h2> <!-- AQUI SE INGRESA EL VALOR DE NOMBRE -->
+            <!-- AQUI SE INGRESA EL VALOR DE DESCRIPCIÓN -->
+            <p class="product-description">Software para la Gestión Financiera en la Nube para Microfinancieras en crecimiento</p>
+            <!-- AQUI SE INGRESA EL VALOR DE BENEFICIOS YA SEA DE LISTADO O BREVE ETIQUETA DE P PARA QUE SOLO SEA
+            DE TIPO TEXTO -->
+            <h3 class="benefits-subtitle">Beneficios</h3>
+            <ul class="benefits-list">
+                <li>Nómina</li>
+                <li>Arrendamiento puro</li>
+                <li>Es mutisurcusal </li>
+                <!-- Agrega más beneficios si es necesario -->
+            </ul>
+            <!-- AQUI SE INGRESA EL VALOR DE PRECIO -->
+            <p class="product-price"> 200.00 MXM </p>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+        </div>
+    </div>
+</body>

@@ -1,12 +1,25 @@
 .gif-block {
-  background: url('https://metododinero.com/wp-content/uploads/2020/03/ImpishQueasyBoubou-size_restricted.gif') no-repeat center center fixed; 
-  background-size: cover;
+  position: relative;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #ffffff;
+  color: white;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('https://thumbs.gfycat.com/HilariousCornyDalmatian-max-1mb.gif') no-repeat center center fixed;
+  background-size: cover;
+  /* Reducir el brillo de la imagen de fondo al 50% */
+  filter: brightness(50%);
+  /* Ajustar el z-index para que el contenido de texto esté por encima */
+  z-index: -1;
 }
 
 .gif-block h1 {
@@ -52,7 +65,7 @@
   margin-right: 75px;
 }
 .bg-blue {
-  background-color: rgb(62, 62, 255); /* Puedes reemplazar 'blue' por el código de color que prefieras. */
+  background-color: rgb(22, 136, 7); /* Puedes reemplazar 'blue' por el código de color que prefieras. */
   color: white;
   font-size: 2em;
 }

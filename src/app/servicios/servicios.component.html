@@ -9,11 +9,11 @@
   
   <div class="card-container">
     <div class="card" *ngFor="let servicio of filteredServicios">
-      <img [src]="servicio.imagen" alt="Imagen del servicio">
-      <h2>{{ servicio.nombre }}</h2>
-      <p class="description">{{ servicio.descripcion }}</p>
-      <p class="price-container">Precio: {{ servicio.precio }} MXM</p>
-      <a [routerLink]="['/servicios', servicio.id]">Ver detalles</a>
+      <img [src]="servicio.node.picture" alt="Imagen del servicio">
+      <h2>{{ servicio.node.name }}</h2>
+      <p class="description">{{ servicio.node.description }}</p>
+      <p class="price-container">Precio: {{ servicio.node.cost }} MXM</p>
+      <a [routerLink]="['/servicios', servicio.node.idProducto]">Ver detalles</a>
     </div>
   </div>
   

@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "http://gepyxis1/pimcore-graphql-webservices/RestApi",
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api":""
+      },
+      "changeOrigin": true
+    }
+  }
